@@ -9,16 +9,15 @@ public class Prob04 {
 
 		System.out.print("문자열을 입력하세요 : ");
 		String text = scanner.nextLine();
-		
-		// 중첩 Loop
-		int length = text.length();
-		System.out.println(length);
 
-		char c0 = text.charAt(0);
-		char c1 = text.charAt(1);
-		char c2 = text.charAt(2);
-		System.out.println(c0 + ":" + c1 + ":" + c2);
-		
+		int length = text.length();
+		for( int i = 0; i < length; i++ ) {
+			for( int j = 0; j <= i; j++ ) {
+				System.out.print( text.charAt( j ) );
+			}
+			
+			System.out.println( "" );
+		}
 		
 		scanner.close();
 	}
