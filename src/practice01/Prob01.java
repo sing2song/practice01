@@ -12,6 +12,7 @@ public class Prob01 {
 		
 		if( number % 3 == 0 ) {
 			System.out.println( "3의 배수 입니다." );
+			System.out.println("그렇습니다");
 		}
 		
 		scanner.close();
